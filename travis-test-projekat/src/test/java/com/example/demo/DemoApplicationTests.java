@@ -45,4 +45,9 @@ class DemoApplicationTests {
 	public void testWelcone() throws Exception {
 		MvcResult res = mockMvc.perform(get("/hello")).andExpect(status().isOk()).andReturn();
 	}
+	
+	@Test
+	public void primerTest() {
+	    assertEquals(1, 5);
+	}
 }
