@@ -30,7 +30,9 @@ pipeline {
         }
         stage('Test'){
 		    steps{
-		    	bat 'travis-test-projekat/mvn test'
+		    	dir('travis-test-projekat'){
+		    		bat 'mvn test'
+		    	}
 		    }
 		    post{
 		    	always{
