@@ -33,6 +33,8 @@ pipeline {
 		    	dir('travis-test-projekat'){
 		    		bat 'mvn test'
 		    	}
+		    	
+		    	
 		    }
 		    post{
 		    	always{
